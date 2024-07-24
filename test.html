@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .hamburger {
+            display: block;
+            width: 30px;
+            height: 25px;
+            position: relative;
+            cursor: pointer;
+        }
+        .hamburger span {
+            background: #333;
+            display: block;
+            height: 4px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            transition: all 0.3s;
+        }
+        .hamburger span:nth-child(1) {
+            top: 0;
+        }
+        .hamburger span:nth-child(2) {
+            top: 10px;
+        }
+        .hamburger span:nth-child(3) {
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            // Logic to toggle menu visibility
+            console.log("Hamburger menu clicked");
+        }
+    </script>
+</body>
+</html>
